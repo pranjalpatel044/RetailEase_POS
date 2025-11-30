@@ -1,0 +1,42 @@
+.category-list-container {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+  background-color: #2c3335;
+}
+
+.input-group input.form-control {
+  border-radius: 20px 0 0 20px;
+}
+
+.input-group-text {
+  border-radius: 0 20px 20px 0;
+  border-left: 0;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.category-image {
+  width: 60px;
+  height: 60px;
+  border: 3px solid white;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.btn-danger.btn-sm i {
+  font-size: 16px;
+}

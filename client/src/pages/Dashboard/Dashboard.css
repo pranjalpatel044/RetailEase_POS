@@ -1,0 +1,166 @@
+/* Base Wrapper */
+.dashboard-wrapper {
+  padding: 2rem;
+  background: linear-gradient(to right, #1e272e, #2c3e50);
+  color: #ecf0f1;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Stats Section */
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 250px;
+  background: rgba(47, 54, 64, 0.9);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.stat-icon {
+  font-size: 2.4rem;
+  color: #00a8ff;
+}
+
+.stat-content h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+  color: #dcdde1;
+}
+
+.stat-content p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 6px 0 0;
+  color: #ffffff;
+}
+
+/* Recent Orders Card */
+.recent-orders-card {
+  background: rgba(47, 54, 64, 0.95);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.recent-order-title {
+  font-size: 1.4rem;
+  color: #f1f2f6;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Table Styling */
+.orders-table-container {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 800px;
+}
+
+.orders-table thead {
+  background-color: #3d3d3d;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+.orders-table th {
+  color: #f5f6fa;
+  font-weight: 600;
+}
+
+.orders-table td {
+  color: #dcdde1;
+}
+
+/* Payment Method Styling */
+.payment-method {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.payment-method.cash {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.payment-method.card {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.payment-method.upi {
+  background-color: #8e44ad;
+  color: #fff;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.success {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.status-badge.failed {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.status-badge.pending {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+/* Loading Spinner */
+.loading {
+  margin: 80px auto;
+  display: block;
+  font-size: 1.2rem;
+  color: #00a8ff;
+}
+
+/* Error Message */
+.error {
+  color: #e74c3c;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 2rem;
+}

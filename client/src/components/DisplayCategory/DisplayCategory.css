@@ -1,0 +1,22 @@
+/* Wrapper */
+.display-category-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 10px;
+  justify-content: flex-start;
+  background: transparent;
+}
+
+/* Category Column (Bootstrap handled responsiveness, still we enhance layout) */
+.display-category-wrapper .col-md-3 {
+  flex: 1 1 180px;
+  max-width: 220px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.display-category-wrapper .col-md-3:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
