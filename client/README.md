@@ -1,12 +1,78 @@
-# React + Vite
+# 🧾 Billing Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **full-stack Retail Billing & Inventory Management System** built with **Spring Boot, React.js, MySQL, and Razorpay**.  
+It includes **Admin Panel** for managing users, categories, items, and **User Panel** for billing, cart, payments, and receipts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 🔑 Authentication & Roles
+- Secure login with **Spring Security + JWT authentication**
+- Role-based access:
+  - **Admin** → manage staff users, categories, items, orders
+  - **Staff/User** → create customer bills, process payments
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛒 Billing & Orders
+- Add items to cart, update quantity, remove items
+- Generate customer orders with **Cash** or **UPI (Razorpay test)**
+- Auto calculate subtotal, tax (1%), and total
+- Print **receipt popup** with order details
+
+### 📊 Admin Panel
+- Manage **users** (add/edit staff accounts)
+- Manage **categories & items** (with image upload and color selection)
+- View order history and reports
+
+### 💳 Payment Integration
+- **Cash mode** → instant order confirmation  
+- **UPI mode** → Razorpay test payment flow (no real money)  
+- Payment verification and failure handling included
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:** React.js, Bootstrap, Context API, React Hot Toast  
+**Backend:** Spring Boot, Spring Security (JWT), JPA/Hibernate  
+**Database:** MySQL (Railway/Local)  
+**Payments:** Razorpay (Test Keys)  
+
+---
+⚠️ Note: Razorpay integration runs in **test mode** → no real payments.
+
+---
+
+## 📸 Screenshots
+
+#### Login
+![Login](./public/Login.png)
+
+#### Dashboard
+![Dashboard](./public/Dashboard.png)
+
+#### Explore
+![Explore](./public/Explore.png)
+![Payment](./public/Payment.png)
+
+#### Manage Items
+![Manage Items](./public/Items.png)
+
+#### Manage Categories
+![Manage Categories](./public/Categories.png)
+
+#### Manage Users
+![Manage Users](./public/Users.png)
+
+#### Order History
+![Order History](./public/History.png)
+
+---
+
+## 🏗️ Project Setup (Local)
+
+### Backend
+```bash
+git clone https://github.com/your-username/billing-management-backend.git
+cd billing-management-backend
+./mvnw spring-boot:run
