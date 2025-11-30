@@ -8,7 +8,7 @@ It includes **Admin Panel** for managing users, categories, items, and **User Pa
 ## ✨ Features
 
 ### 🔑 Authentication & Roles
-- Secure login with **JWT authentication**
+- Secure login with **Spring Security + JWT authentication**
 - Role-based access:
   - **Admin** → manage staff users, categories, items, orders
   - **Staff/User** → create customer bills, process payments
@@ -37,60 +37,34 @@ It includes **Admin Panel** for managing users, categories, items, and **User Pa
 **Backend:** Spring Boot, Spring Security (JWT), JPA/Hibernate  
 **Database:** MySQL (Railway/Local)  
 **Payments:** Razorpay (Test Keys)  
-**Deployment:** Frontend on Vercel, Backend on Render/Railway  
 
 ---
-
-## 🚀 Live Demo
-
-- **Frontend (Live):** [https://your-frontend-url.com](https://your-frontend-url.com)  
-- **Backend (API):** [https://your-backend-url.com](https://your-backend-url.com)  
-
----
-
-## 🔑 Demo Accounts
-
-Use these accounts to explore the project:
-
-### 👨‍💼 Admin
-- Email: `demo.admin@yourapp.com`
-- Password: `DemoAdmin@123`
-
-### 👩‍💻 Staff / Cashier
-- Email: `demo.user@yourapp.com`
-- Password: `DemoUser@123`
-
----
-
-## 🧭 How to Try
-
-1. Visit the **Live frontend** link.  
-2. **Login as Admin** to:
-   - Add/manage staff users  
-   - Add categories and items with images  
-   - View orders and reports  
-3. **Login as Staff** to:
-   - Add items to cart and enter customer details  
-   - Choose **Cash** or **UPI** (Razorpay test) payment  
-   - View and print **receipt popup**  
-4. View all created orders in the Orders page.  
-
 ⚠️ Note: Razorpay integration runs in **test mode** → no real payments.
 
 ---
 
 ## 📸 Screenshots
 
-| Login | Admin Panel | Billing Page | Receipt Popup |
-|-------|-------------|--------------|---------------|
-| ![Login](docs/screens/login.png) | ![Admin Panel](docs/screens/admin.png) | ![Billing](docs/screens/billing.png) | ![Receipt](docs/screens/receipt.png) |
+#### Login
+![Login](./client/public/Login.png)
+
+#### Dashboard
+![Dashboard](./client/public/Dashboard.png)
+
+#### Explore
+![Explore](./client/public/Explore.png)
+![Payment](./client/public/Payment.png)
+
+#### Manage Items
+![Manage Items](./client/public/Items.png)
+
+#### Manage Categories
+![Manage Categories](./client/public/Categories.png)
+
+#### Manage Users
+![Manage Users](./client/public/Users.png)
+
+#### Order History
+![Order History](./client/public/History.png)
 
 ---
-
-## 🏗️ Project Setup (Local)
-
-### Backend
-```bash
-git clone https://github.com/your-username/billing-management-backend.git
-cd billing-management-backend
-./mvnw spring-boot:run
