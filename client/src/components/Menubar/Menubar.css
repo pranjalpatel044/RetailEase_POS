@@ -1,0 +1,50 @@
+/* Menubar.css */
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+  color: #ffffffcc;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #ffc107 !important;
+}
+
+.dropdown-menu {
+  font-size: 0.95rem;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+img.rounded-circle {
+  border: 2px solid #ffc107;
+  padding: 2px;
+}
+
+/* Optional: smooth sticky effect */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  background-color: #212529;
+}
