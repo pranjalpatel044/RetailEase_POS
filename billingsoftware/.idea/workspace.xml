@@ -5,12 +5,157 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7910d7b9-92cd-43a5-8c0d-53304fd3f2ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pranjal/billingsoftware/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pranjal/billingsoftware/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pranjal/billingsoftware/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pranjal/billingsoftware/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pranjal/billingsoftware/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pranjal/billingsoftware/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/BillingsoftwareApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/BillingsoftwareApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/config/AWSConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/config/AWSConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/ItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/CategoryEntity$CategoryEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/CategoryEntity$CategoryEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/CategoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/CategoryEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/ItemEntity$ItemEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/ItemEntity$ItemEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/ItemEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/ItemEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/OrderEntity$OrderEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/OrderEntity$OrderEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/OrderEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/OrderEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/OrderItemEntity$OrderItemEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/OrderItemEntity$OrderItemEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/OrderItemEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/OrderItemEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/UserEntity$UserEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/UserEntity$UserEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/filter/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/filter/JwtRequestFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/AuthRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/AuthRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/AuthResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/AuthResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/CategoryRequest$CategoryRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/CategoryRequest$CategoryRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/CategoryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/CategoryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/CategoryResponse$CategoryResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/CategoryResponse$CategoryResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/CategoryResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/CategoryResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/DashboardResponse$DashboardResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/DashboardResponse$DashboardResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/DashboardResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/DashboardResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/ItemRequest$ItemRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/ItemRequest$ItemRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/ItemRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/ItemRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/ItemResponse$ItemResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/ItemResponse$ItemResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/ItemResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/ItemResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderRequest$OrderItemRequest$OrderItemRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderRequest$OrderItemRequest$OrderItemRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderRequest$OrderItemRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderRequest$OrderItemRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderRequest$OrderRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderRequest$OrderRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderResponse$OrderItemResponse$OrderItemResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderResponse$OrderItemResponse$OrderItemResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderResponse$OrderItemResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderResponse$OrderItemResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderResponse$OrderResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderResponse$OrderResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/OrderResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentDetails$PaymentDetailsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentDetails$PaymentDetailsBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentDetails$PaymentStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentDetails$PaymentStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentVerificationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/PaymentVerificationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/RazorpayOrderResponse$RazorpayOrderResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/RazorpayOrderResponse$RazorpayOrderResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/RazorpayOrderResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/RazorpayOrderResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/UserRequest$UserRequestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/UserRequest$UserRequestBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/UserRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/UserResponse$UserResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/UserResponse$UserResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/UserResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/io/UserResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/CategoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/ItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/ItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/OrderEntityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/OrderEntityRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/OrderItemEntityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/OrderItemEntityRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/FileUploadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/FileUploadService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/ItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/RazorpayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/RazorpayService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/AppUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/AppUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/FileUploadServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/FileUploadServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/ItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/RazorPayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/RazorPayServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pranjal/billingsoftware/util/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.pranjal.billingsoftware.BillingsoftwareApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.pranjal.billingsoftware.BillingsoftwareApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.pranjal.billingsoftware.BillingsoftwareApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.pranjal.billingsoftware.BillingsoftwareApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/Assets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/Login-blue.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/device.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CartItems/CartItems.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CartItems/CartItems.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CartSummary/CartSummary.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CartSummary/CartSummary.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Category/Category.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Category/Category.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CategoryForm/CategoryForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CategoryList/CategoryList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CategoryList/CategoryList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CustomerForm/CustomerForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/CustomerForm/CustomerForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/DisplayCategory/DisplayCategory.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/DisplayCategory/DisplayCategory.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/DisplayItems/DisplayItems.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/DisplayItems/DisplayItems.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Items/Items.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Items/Items.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/ItemsForm/ItemsForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/ItemsList/ItemsList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/ItemsList/ItemsList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Menubar/Menubar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Menubar/Menubar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/OrderHistory/OrderHistory.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/OrderHistory/OrderHistory.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/ReceiptPopup/Print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/ReceiptPopup/ReceiptPopup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/ReceiptPopup/ReceiptPopup.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/SearchBox/SearchBox.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/UsersForm/UsersForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/UsersList/UsersList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/context/AppContext.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Dashboard/Dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Dashboard/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Explore/Explore.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Explore/Explore.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Login/Login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Login/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ManageCategory/ManageCategory.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ManageCategory/ManageCategory.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ManageItems/ManageItems.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ManageItems/ManageItems.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ManageUsers/ManageUsers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ManageUsers/ManageUsers.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/NotFound/NotFound.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/NotFound/NotFound.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/service/AuthService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/service/CategoryService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/service/Dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/service/ItemService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/service/OrderService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/service/PaymentService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/service/UserService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/util/Constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/vite.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +163,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pranjalpatel044&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pranjalpatel044/RetailEase_POS.git&quot;,
+    &quot;accountId&quot;: &quot;3f60b8d5-c6de-474f-8807-4978304b3292&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -36,16 +193,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BillingsoftwareApplication.executor": "Run",
-    "Application.RetailEase_env.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BillingsoftwareApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RetailEase_env.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="RetailEase_env" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-23" />
