@@ -1,81 +1,143 @@
-# 🧾 RetailEase - Billing & Inventory Management System
+# 🧾 Billing & POS Management System
+![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk) ![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen?logo=springboot) ![React](https://img.shields.io/badge/React-18-blue?logo=react) ![MySQL](https://img.shields.io/badge/MySQL-8-blue?logo=mysql) ![JWT](https://img.shields.io/badge/Auth-JWT-yellow) ![Razorpay](https://img.shields.io/badge/Payment-Razorpay-purple?logo=razorpay) ![AWS S3](https://img.shields.io/badge/AWS-S3-orange?logo=amazonaws) ![License](https://img.shields.io/badge/License-MIT-green)
 
-![Java](https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?logo=springboot&logoColor=white) ![React](https://img.shields.io/badge/Frontend-React.js-61DAFB?logo=react&logoColor=black) ![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?logo=mysql&logoColor=white) ![Security](https://img.shields.io/badge/Auth-JWT%20Security-red) ![Razorpay](https://img.shields.io/badge/Payment-Razorpay-blue)
+A **full-stack Retail Billing & POS Management System** designed for small retail stores and supermarkets.
+The system provides a **Point of Sale (POS) interface** for staff to generate customer bills and an Admin Panel for managing users, categories, items, and order history.
 
-## 📖 Overview
-**RetailEase** is a comprehensive full-stack web application designed to streamline daily operations for retail businesses. It creates a seamless bridge between inventory management and point-of-sale (billing) processes.
+Built with **Spring Boot, React.js, MySQL, and Razorpay (test mode)** to simulate a real-world retail billing environment.
 
-This system solves manual billing errors and inventory tracking issues by providing a **Role-Based Admin Panel** and a fast, secure **Billing Interface** integrated with **Razorpay** for digital payments.
+---
 
-## ✨ Key Features
+## 🚀 Key Features
 
-### 🔐 Security & Authentication
-* **JWT Authentication:** Secure login mechanism using Spring Security and JSON Web Tokens.
-* **Role-Based Access Control (RBAC):**
-    * **Admin:** Full control over inventory, staff management, and sales reports.
-    * **Staff:** Restricted access to billing and order processing only.
+### 🔐 Authentication & Authorization
+- Secure login with **Spring Security + JWT authentication**
+- Role-based access control:
+  - **Admin** → manage staff users, categories, items, orders
+  - **Staff/User** → create customer bills,Add items to cart, process payments
 
-### 🛒 Billing & Sales
-* **Dynamic Cart:** Add/Remove items, adjust quantities, and auto-calculate totals (Subtotal + 1% Tax).
-* **Instant Invoicing:** Generates a detailed receipt popup immediately after order placement.
-* **Payment Flexibility:** Supports **Cash** and **Online Payments (UPI/Cards)** via Razorpay (Test Mode).
+### 🛒 Billing & Order Management
+- POS-style billing interface
+- Add items to cart with quantity control
+- Remove items from cart
+- Real-time subtotal, tax, and total calculation
+- Generate customer orders with **Cash** or **UPI (Razorpay test)**
+- Print **receipt popup** with order details
 
-### 📦 Inventory & Admin Management
-* **User Management:** Admins can onboard new staff members.
-* **Product Catalog:** CRUD operations for Categories and Items (supports Image Uploads & Color tags).
-* **Analytics:** View Order History to track sales performance.
+### 📦 Inventory Management (Admin)
+- Manage **users** (add/remove staff accounts)
+- Manage **categories & items** 
+- Upload product images
+- Select custom category colors for UI display
+
+### 📊 Order History & Reporting
+- View previous orders
+- Track order details
+- Monitor store sales activity
+
+### 💳 Payment Integration
+Two payment options available:
+- **Cash mode** → instant order confirmation  
+- **UPI mode** → Razorpay test payment flow 
+- Payment verification and failure handling included
+⚠️ Note: Razorpay integration runs in test mode → no real payments.
+---
+
+## 🏗 System Architecture
+React UI
+   ↓
+Axios API
+   ↓
+JWT Authentication
+   ↓
+Spring Security
+   ↓
+Controller → Service → Repository
+   ↓
+MySQL Database
+   ↓
+External Services (Razorpay + AWS S3)
+
+## Database Setup
+
+- The first admin account is created manually using SQL
+- All other users are created through the Admin panel API
+- Passwords are stored securely using BCrypt hashing
+- Example admin insert:
+``` sql
+INSERT INTO tbl_users (user_id,email,password,role,name)
+VALUES (
+'ADMIN001',
+'admin@example.com',
+'<bcrypt-password>',
+'ROLE_ADMIN',
+'Admin'
+);
+
+```
 
 ## 🛠️ Tech Stack
 
-| Component | Technologies Used |
-| :--- | :--- |
-| **Backend** | Java, Spring Boot, Spring Security (JWT), Hibernate/JPA |
-| **Frontend** | React.js, Bootstrap 5, Context API, React Hot Toast |
-| **Database** | MySQL (Railway Cloud / Localhost) |
-| **Payments** | Razorpay Payment Gateway (Test Environment) |
-| **Tools** | Maven, Postman, Git/GitHub |
-
-## 📸 Screenshots
-| Login Screen | Admin Dashboard |
-|:---:|:---:|
-| ![Login](./client/public/Login.png) | ![Dashboard](./client/public/Dashboard.png) |
-
-| Billing Section | Payment Gateway |
-|:---:|:---:|
-| ![Explore](./client/public/Explore.png) | ![Payment](./client/public/Payment.png) |
-
-| Inventory Management | Order History |
-|:---:|:---:|
-| ![Items](./client/public/Items.png) | ![History](./client/public/History.png) |
-
-## 🚀 Installation & Setup
-
-### 1. Backend Setup (Spring Boot)
-1.  Clone the repo and open the `backend` folder in IntelliJ IDEA / Eclipse.
-2.  Update `application.properties` with your MySQL credentials:
-    ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/billing_db
-    spring.datasource.username=root
-    spring.datasource.password=password
-    ```
-3.  Run the application (Server starts on `localhost:8080`).
-
-### 2. Frontend Setup (React)
-1.  Navigate to the client folder:
-    ```bash
-    cd client
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Run the frontend:
-    ```bash
-    npm start
-    ```
-
-## ⚠️ Important Note
-This project uses **Razorpay Test Keys**. No real money is deducted during transactions. Ensure you have internet connectivity to load the payment modal.
+**Frontend:** React.js, Bootstrap, Axios API, React Hot Toast  
+**Backend:** Spring Boot, Spring Security, JWT Authentication, Spring Data JPA / Hibernate 
+**Database:** MySQL   
+**Payment Gateway:** Razorpay (Test Mode)
+**Image Store:** AWS S3
 
 ---
-**Developed by [Pranjal Patel](https://github.com/pranjalpatel044)**
+
+## 📸 Screenshots
+
+#### Login
+![Login](./client/public/Login.png)
+
+#### Dashboard
+![Dashboard](./client/public/Dashboard.png)
+
+#### Explore / POS Billing
+![Explore](./client/public/Explore.png)
+![Payment](./client/public/Payment.png)
+
+#### Manage Items
+![Manage Items](./client/public/Items.png)
+
+#### Manage Categories
+![Manage Categories](./client/public/Categories.png)
+
+#### Manage Users
+![Manage Users](./client/public/Users.png)
+
+#### Order History
+![Order History](./client/public/History.png)
+
+---
+
+## ⚙️ Project Setup (Local Development)
+
+### Backend Setup
+```bash
+git clone https://github.com/your-username/billing-management-backend.git
+cd billing-management-backend
+./mvnw spring-boot:run
+```
+Backend will start on: http://localhost:8080
+
+### Frontend Setup
+```bash
+git clone https://github.com/your-username/billing-management-frontend.git
+cd billing-management-frontend
+npm install
+npm start
+```
+Frontend will start on: http://localhost:5173
+
+### 👨‍💻 Author
+
+Pranjal Patel
+Java Full-Stack Developer
+
+Tech Stack:
+Spring Boot • React.js • MySQL • JWT • Razorpay
+
+### ⭐ If you like this project
+Give it a star on GitHub ⭐
